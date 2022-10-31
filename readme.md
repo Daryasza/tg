@@ -9,9 +9,9 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the production mode.\
+Runs the app in the production mode.
 
 ### `npm dev`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 
