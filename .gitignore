@@ -1,0 +1,6 @@
+//env variables: TG TOKEN
+.env
+
+/node_modules
+
+.idea

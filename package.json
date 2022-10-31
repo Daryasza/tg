@@ -1,0 +1,23 @@
+{
+  "name": "tgbot",
+  "version": "1.0.0",
+  "description": "telegram bot",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:Daryasza/tg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-telegram-bot-api": "^0.59.0"
+  },
+  "devDependencies": {
+    "nodemo": "^1.0.0"
+  }
+}
