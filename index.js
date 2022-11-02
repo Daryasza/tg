@@ -1,4 +1,4 @@
-require('dotenv').config();
+// require('dotenv').config();
 const token = process.env.TOKEN;
 const {startGameOptions, gameNumbersOptions, gameAgainOptions} = require('./options.js');
 const TelegramBot = require('node-telegram-bot-api');
