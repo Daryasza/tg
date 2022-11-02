@@ -1,5 +1,4 @@
 // require('dotenv').config();
-
 const token = process.env.TOKEN;
 const {startGameOptions, gameNumbersOptions, gameAgainOptions} = require('./options.js');
 
