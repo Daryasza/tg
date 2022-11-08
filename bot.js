@@ -8,7 +8,6 @@ var bot;
 if(process.env.NODE_ENV === 'production') {
   bot = new TelegramBot(token);
   bot.setWebHook(process.env.HEROKU_URL + token);
-  console.log(process.env.HEROKU_URL + token + '/webhook');
 }
 else {
   bot = new TelegramBot(token, {polling: true});
@@ -53,7 +52,7 @@ bot.on('callback_query', cbq => {
     return playGame(chat_id);
 
   } else if (data === '/disagreetoplay') {
-    return bot.sendSticker(chat_id, 'https://tlgrm.eu/_/stickers/ccd/a8d/ccda8d5d-d492-4393-8bb7-e33f77c24907/10.jpg');
+    return bot.sendSticker(chat_id, 'https://tlgrm.eu/_/stickers/3d2/135/3d213551-8cac-45b4-bdf3-e24a81b50526/256/56.webp');
 
   } else if (data === '/again') {
     return playGame(chat_id);
