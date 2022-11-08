@@ -7,7 +7,9 @@ var bot;
 
 if(process.env.NODE_ENV === 'production') {
   bot = new TelegramBot(token);
-  bot.setWebHook(process.env.HEROKU_URL + bot.token);
+  bot.setWebHook(process.env.HEROKU_URL + token);
+
+  console.log(bot.token);
 }
 else {
   bot = new TelegramBot(token, {polling: true});
@@ -36,7 +38,6 @@ const playGame = async (chat_id) => {
   await bot.sendMessage(chat_id, `Я загадала число от 0 до 9. \n\n Угадай какое!`, gameNumbersOptions);
 }
 
-
 bot.on('message', async msg => {
   const text = msg.text;
   const chat_id = msg.chat.id;
@@ -53,7 +54,7 @@ bot.on('callback_query', cbq => {
     return playGame(chat_id);
 
   } else if (data === '/disagreetoplay') {
-    return bot.sendMessage(chat_id, 'пидора ответ!');
+    return bot.sendSticker(chat_id, 'https://tlgrm.eu/_/stickers/ccd/a8d/ccda8d5d-d492-4393-8bb7-e33f77c24907/10.jpg');
 
   } else if (data === '/again') {
     return playGame(chat_id);
