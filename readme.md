@@ -1,7 +1,4 @@
-Small pet-project, telegram bot. Can play a game with you on guessing a number.
-
-![image](https://tlgrm.eu/_/stickers/3d2/135/3d213551-8cac-45b4-bdf3-e24a81b50526/1.webp)
-
+Small pet-project, telegram bot [Angella](https://t.me/lijhobot). Can play a game with you on guessing a number.
 
 ## Available Scripts
 
