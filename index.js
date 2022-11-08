@@ -1,2 +1,2 @@
-const bot = require('./bot');
+const bot = require('./bot/bot');
 require('./server')(bot);

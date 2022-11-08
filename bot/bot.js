@@ -1,4 +1,5 @@
 // require('dotenv').config();
+
 const token = process.env.TOKEN;
 const {startGameOptions, gameNumbersOptions, gameAgainOptions} = require('./options.js');
 
@@ -64,7 +65,6 @@ bot.on('callback_query', cbq => {
   } else {
     return bot.sendMessage(chat_id, `Нет, не правильно. Твое число ${data}, а я загадала ${number}`, gameAgainOptions);
   }
-
 })
 
 module.exports = bot;
