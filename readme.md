@@ -1,4 +1,4 @@
-Small pet-project, telegram bot [Angella](https://t.me/lijhobot). Deployed on Heroku. Can play a game with you on guessing a number.
+Small telegram bot [Angella](https://t.me/lijhobot). Deployed on Heroku. Can play a game with you on guessing a number.
 
 ## Available Scripts
 
